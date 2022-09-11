@@ -5,37 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cash Register App</title>
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./main.css" />
 </head>
 <body>
 
     <div class="container">
-        <h1>Cash Register</h1>
-        <h2>Enter the bill and cash amount, to get change to be returned</h2>
+        <h1 class="heading">Cash Register For Adidas</h1>
+        <p>
+            Enter the bill and cash amount given to check the amount to be returned in minimum no of notes
+        </p>
+        
         <label for="bill-amount">Bill Amount:</label>
-        <input type="text" class="bill-amount">
+        <input id="bill-amount" type="text" />
 
-         <label for="cash-given">Cash Given:</label>
-        <input type="text" class="cash-given">
-         
-        <label for="check-button"></label>
-        <button class="check-button">check</button>
+        <label for="cash-given">Cash Given:</label>
+        <input id="cash-given" type="text" />
 
-        <table class="change-table"><caption>Return Change</caption>
+        <button id="check-button" type="button">Check</button>
+        <p id="error-message"></p>
+    
+
+        <table class="return-table">
+            <caption>Change Returned</caption>
             <tr>
                 <th>No of notes</th>
-                <td class="returned-notes"></td>
-                <td class="returned-notes"></td>
-                <td class="returned-notes"></td>
-                <td class="returned-notes"></td>
-                <td class="returned-notes"></td>
-                <td class="returned-notes"></td>
-                <td class="returned-notes"></td>
-                <td class="returned-notes"></td>
-                <td class="returned-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
             </tr>
             <tr>
-                <th>Notes Denorms</th>
+                <th>Note Denorms</th>
                 <td>2000</td>
                 <td>500</td>
                 <td>200</td>
@@ -48,10 +52,12 @@
             </tr>
         </table>
 
+        
     </div>
               
     
     
-    <script src="index.js"></script>
+    
 </body>
+<script src="./index.js"></script>
 </html>
