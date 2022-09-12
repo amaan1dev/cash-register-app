@@ -4,60 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cash Register App</title>
-    <link rel="stylesheet" href="./main.css" />
+    <title>BlackBucks Cash Register</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1 class="heading">Cash Register For Adidas</h1>
-        <p>
-            Enter the bill and cash amount given to check the amount to be returned in minimum no of notes
-        </p>
-        
-        <label for="bill-amount">Bill Amount:</label>
-        <input id="bill-amount" type="text" />
-
-        <label for="cash-given">Cash Given:</label>
-        <input id="cash-given" type="text" />
-
-        <button id="check-button" type="button">Check</button>
-        <p id="error-message"></p>
-    
-
-        <table class="return-table">
-            <caption>Change Returned</caption>
-            <tr>
-                <th>No of notes</th>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-            </tr>
-            <tr>
-                <th>Note Denorms</th>
-                <td>2000</td>
-                <td>500</td>
-                <td>200</td>
-                <td>100</td>
-                <td>50</td>
-                <td>20</td>
-                <td>10</td>
-                <td>5</td>
-                <td>1</td>
-            </tr>
-        </table>
-
-        
-    </div>
+    <body>
+        <div class="container">
+          <div class="navbar">
+            <div class="navbar__logo">
+              <img src="./images/logo.png" alt="blackbucks Logo" />
+            </div>
+            <div class="navbar-menu__wrapper">
+              <div class="navbar__menu">
+                <h1>BlackBucks India</h1><small>An initiative by Salman Khan</small>
+              </div>
+            </div>
+          </div>
+          <div class="hero">
+            <div class="hero__content">
+              <div class="title">
+                <span>
+                  Welcome To BlackBucks<span class="summer"> Self Pay</span>
+                </span><small class="thanks-note">Thanks for visiting, click next for the bill</small>
+              </div>
               
-    
+              <a href="cash-register.html" class="order-now">Pay Now</a>
+              
+            </div>
+            <div class="hero__image">
+              <img src="./images/drinks.png" alt="Starbucks drinks" />
+            </div>
+          </div>
+          
+        </div>
+      </body>
     
     
 </body>
-<script src="./index.js"></script>
 </html>
+<!-- <nav class="navigation container">
+    <div class="nav-brand"><strong>Welcome To Starbucks</strong></div>
+    <ul class="list-non-bullet nav-pills">
+        <li class="list-item-inline">
+            <a class="link link-active" href="/">Credit Card</a>
+        </li>
+        <li class="list-item-inline">
+            <a class="link" href="/">Pay Online</a>
+        </li>
+    </ul>
+</nav>
+
+
+<h1 class="hero-heading">Welcome to Starbuck's <span class="heading-inverted">Cash Register</span></h1>
+<h3>Enter the bill amount and cash provided to get the change amount to be returned</h3>
+
+
+
+<section class="section off-white">
+    <div class="container-center">
+   
+        <label for="bill-amount">Enter The Bill Amount:</label>
+      <input type="number" class="bill-amount">
+
+<label for="cash-given">Enter Cash Provided</label>
+<input type="text" class="cash-given">
+
+<button class="check-button">Check Return</button>
+        </div>
+    </section> -->

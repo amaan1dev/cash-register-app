@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackBucks Cash Register</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+    <body>
+
+        <div class="container">
+            <div class="navbar">
+              <div class="navbar__logo">
+                <img src="./images/logo.png" alt="blackbucks Logo" />
+              </div>
+              <div class="navbar-menu__wrapper">
+                <div class="navbar__menu">
+                  <h1>BlackBucks Cash Register</h1><small>We Only Accept Cash, Soon Launching "Bhai-Pay" for digital payments</small>
+                </div>
+              </div>
+            </div>
+           
+
+            <section class="section off-white">
+                <div class="container-center">
+               
+                    <label for="bill-amount">Bill Amount:</label>
+                  <input type="text" id="bill-amount">
+            
+            <label for="cash-given">Cash Provided</label>
+            <input type="text" id="cash-given">
+
+            <p id="error-message"></p>
+            
+            <button id="check-button">Check Return</button>
+
+            <table class="change-table">
+                <caption id="register-text">Return Change</caption>
+                <tr>
+                    <th class="table-head">No of notes</th>
+                   <td class="no-of-notes"></td>
+                   <td class="no-of-notes"></td>
+                   <td class="no-of-notes"></td>
+                   <td class="no-of-notes"></td>
+                   <td class="no-of-notes"></td>
+                   <td class="no-of-notes"></td>
+                   <td class="no-of-notes"></td>
+                </tr>
+                <tr>
+                    <th class="table-head">Notes</th>
+                    <td class="denorms">2000</td>
+                    <td class="denorms">500</td>
+                    <td class="denorms">100</td>
+                    <td class="denorms">20</td>
+                    <td class="denorms">10</td>
+                    <td class="denorms">5</td>
+                    <td class="denorms">1</td>
+                </tr>
+            </table>
+                    </div>
+                </section> 
+              
+    
+              
+              
+
+          
+      </body>
+      <script src="index.js"></script>
+</html>
+
+
+
+
+
