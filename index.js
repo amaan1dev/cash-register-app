@@ -16,15 +16,15 @@ checkButton.addEventListener("click", () => {
             let amountToBeReturned = cash - bill
             calculateChange(amountToBeReturned)
         } else {
-            errorMsg("You need to give more cash. 💵")
+            errorMsg("Salman khan wants you to wash plates")
         }
 
         if (bill === cash) {
-            errorMsg("Nothing to return!")
+            errorMsg("No change is required to be returned!")
         }
 
     } else {
-        errorMsg("Enter valid Amount. 🤔")
+        errorMsg("Please enter valid Amount")
     }
 
 })
